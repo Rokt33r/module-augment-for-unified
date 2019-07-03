@@ -7,7 +7,9 @@ unified().use(parse, {
 })
 
 // Now it works as expected.
-unified().use(parse, '')
+unified().use(parse, {
+  gfm: 'wrong'
+})
 
 // Use Plugin Tuple
 unified().use([parse, {
